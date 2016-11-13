@@ -1,0 +1,106 @@
+\input{style/tuilmenau.tex}
+
+ 
+\title{Vortragstitel}
+\subtitle{Vortragsuntertitel}
+\author{Author}
+\institute[Technische Universität Ilmenau]{%
+	Fakultät für Elektrotechnik und Informationstechnik}
+\date{\today}
+\setDualView
+\titlegraphic{\includegraphics[scale=0.6]{images/logo_tui.eps}}
+
+\begin{document}
+\frame{\titlepage}%Titelfolie
+
+\frame{\frametitle{Inhalt}\tableofcontents[part=1]}%Folie mit Inhaltsverzeichnis
+
+\part{Main Part}
+
+\section{Einführung}
+\subsection*{subsection die man nicht sieht}%Subsections nicht in Inhaltsverzeichnis (sonst ohne Stern)
+\begin{frame}
+\frametitle{Folie mit Bild und Text nebeneinander}
+\vskip5mm
+ \begin{columns}
+    \column{6cm}
+ 	  \includegraphics[width=6.0cm]{style/images/master_background}
+     \column{5cm}
+      \vspace{-1cm}%Vertikale Position der Stichpunkte (an Bild anpassen!)
+	\begin{itemize}
+      	 \item Stichpunkt\newline
+      	 \item Stichpunkt\newline
+       	 \item Stichpunkt\newline
+     	 \item Stichpunkt\newline
+     \end{itemize}
+ \end{columns}
+\end{frame}
+
+\section{Experimentelles}
+\subsection{subsection}
+\begin{frame}
+\frametitle{Folie mit Bild und Text untereinander}
+%\footnotesize{Elementarzelle}
+\begin{tabbing}
+	Text: \qquad \= Text mit tabbing\\
+	\> Test Test Test\\
+\end{tabbing}
+	\vskip5mm
+	\begin{columns}
+		\column{12cm}
+		\centering
+		\includegraphics[width=5.0cm]{style/images/master_background}\\
+	\end{columns}
+\end{frame}
+
+\section{Ergebnisse}
+\subsection*{}
+\begin{frame}
+\frametitle{Folie mit Bild und Text nebeneinander}
+	\begin{columns}
+		\column{6cm}
+		\vskip5mm
+		\includegraphics[width=6.0cm]{style/images/master_background}\\
+		\vskip5mm
+    	\column{5cm}
+      	\vspace{-1cm}
+		\begin{itemize}
+		 \item Stichpunkt\newline
+      	 \item Stichpunkt\newline
+       	 \item Stichpunkt\newline
+     	 \item Stichpunkt\newline
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\section{Diskussion}
+\subsection*{}
+\begin{frame}
+\frametitle{Folie mit Bild und Text nebeneinander}
+\begin{columns}
+    \column{6cm}
+    \vskip5mm
+ 	    \includegraphics[width=6.0cm]{style/images/master_background}
+    \vskip5mm
+    \column{5cm}
+    \vspace{-1cm}
+	\begin{itemize}
+   		 \item Stichpunkt\newline
+      	 \item Stichpunkt\newline
+       	 \item Stichpunkt\newline
+     	 \item Stichpunkt\newline
+       	\end{itemize}
+ \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+\vskip5mm
+\begin{columns}
+    \column{12cm}
+ 	\centering
+	\huge{Vielen Dank!}
+ \end{columns}
+\end{frame}
+
+\end{document}
