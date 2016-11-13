@@ -1,6 +1,6 @@
 # Beamer Theme TU Ilmenau
-
-This is a latex presentation (beamer) theme for the university in ilmenau.
+This is a latex presentation (beamer) theme for the technical university in ilmenau.
+The images and theme is generally from Institut für Werkstofftechnik. I modified it. 
 
 ## Usage
 <code>
