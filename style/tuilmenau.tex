@@ -77,6 +77,7 @@
 		\textcolor{white} {\insertframenumber\ / \inserttotalframenumber} % add page numbers
 	  \end{beamercolorbox}
   }
+
   \vskip0pt
 }
 
@@ -116,12 +117,17 @@
 	\setbeameroption{show notes on second screen=right}
 }
 
-\newcommand{\addcite}[2][0]{%
-		     	\makebox(0.3em, 1.5cm)[r]{
-		     		\tiny{
-		     			\cite{#2} 
-		     		}
-			     }
+
+\newcommand{\addcite}[1]{%
+	\AddToShipoutPictureFG*{%
+		\AtPageLowerLeft{%
+			\put(0.95\paperwidth,5em){											
+				\tiny{
+					\cite{#1} 
+				}			
+			}
+		}
+	}	
 }
 
 
