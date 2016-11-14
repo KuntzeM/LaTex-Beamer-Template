@@ -9,10 +9,10 @@ The images and theme is generally from Institut für Werkstofftechnik. I modifie
 
 ## additional commands
 
-* add reference to th eleft lower corner
+* add reference to the left lower corner
 
 <code latex>
-\addcite{reference_name}
+\addcite{reference_name, reference_name2, ...}
 </code>
 
 * enable dualview mode
