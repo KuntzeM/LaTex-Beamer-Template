@@ -53,29 +53,47 @@
 \setbeamercolor{title}{fg=blue} % text color of titlepage
 \setbeamercolor{item}{fg=green} % color for bullets in items
 
+\setbeamercolor{author in head/foot}{fg=white}
+\setbeamercolor{title in head/foot}{fg=white}
+\setbeamercolor{date in head/foot}{fg=white}
 
 % side bar and footer
 \setbeamersize{sidebar width left=5mm} % size of the left side bar
 \setbeamertemplate{footline}{
 	
   \leavevmode
+  \vspace{-7em}	
   \hbox{
-	  \begin{beamercolorbox}[wd=0.95\paperwidth,ht=10ex,dp=8ex,left]{}%
+
+	  \begin{beamercolorbox}[wd=1\paperwidth,ht=10ex,dp=8ex,left]{}%
+
 		   % navigation with subsections as dots
 		   % \vspace{-3em}
 		   % \hspace{0cm}\insertnavigation{0.4\paperwidth} % add navigation in footer
 			
 		   % navigation with sections, no subsections
-		   \vspace{4cm}
-		   \insertsectionnavigationhorizontal{0.6\paperwidth}{\hskip0pt plus1fill}{} % add navigation in footer
-
+		   	    			
+		   \insertsectionnavigationhorizontal{0.6\paperwidth}{\hskip0pt plus1fill}{} \\ % add navigation in footer}
+		   
 	  \end{beamercolorbox} 
-	 \begin{beamercolorbox}[wd=0.05\paperwidth,ht=10ex,dp=8ex,center]{}%
-	  	%\insertsection
-		\hspace{-3mm} % horizontal position of the page numbers
-		\vspace{-5mm} % vertical position of the page numbers
-		\textcolor{white} {\insertframenumber\ / \inserttotalframenumber} % add page numbers
-	  \end{beamercolorbox}
+
+
+  }
+  \vspace{-3em}
+  \hbox{
+  	\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+  		\hspace{5em}
+  		\usebeamerfont{author in head/foot}\insertshortauthor
+  	\end{beamercolorbox}%
+  	\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+  		\usebeamerfont{title in head/foot}\insertshorttitle
+  	\end{beamercolorbox}%
+  	\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+  		\usebeamerfont{title in head/foot}\insertshortinstitute
+  	\end{beamercolorbox}%	
+	 \begin{beamercolorbox}[wd=0.05\paperwidth,ht=10ex,dp=8ex,right]{}%			 	
+			 	\textcolor{white} {\insertframenumber\ / \inserttotalframenumber} % add page numbers
+	 \end{beamercolorbox}
   }
 
   \vskip0pt
