@@ -1,6 +1,6 @@
 % created by Uwe Schadewald
 % modified by Mathias Kuntze
-\documentclass[presentation, notes, 8pt, mathserif, t]{beamer}
+\documentclass[presentation, 8pt, mathserif, t]{beamer}
 
 \usepackage[english]{babel}
 \usepackage{pgf,graphicx}
@@ -35,7 +35,7 @@
 
 % Background image (CI TU Ilmenau)
 \setbeamercolor{background canvas}{bg=} % make the beamer background invisible
-\AddToShipoutPicture{ \put(0,0){
+\AddToShipoutPicture{ \put(0em,0){
      \parbox[b][\paperheight]{\paperwidth}{
      \centering
      \rotatebox{0}{\includegraphics[width=1.0\paperwidth, height=1.0\paperheight]{style/images/master_background}}
@@ -91,7 +91,7 @@
   	\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
   		\usebeamerfont{title in head/foot}\insertshortinstitute
   	\end{beamercolorbox}%	
-	 \begin{beamercolorbox}[wd=0.05\paperwidth,ht=10ex,dp=8ex,right]{}%			 	
+	 \begin{beamercolorbox}[wd=0.05\paperwidth,ht=10ex,dp=8ex,left]{}%			 	
 			 	\textcolor{white} {\insertframenumber\ / \inserttotalframenumber} % add page numbers
 	 \end{beamercolorbox}
   }
@@ -128,7 +128,8 @@
 \setbeamertemplate{note page}[plain]
 
 %\setlist[itemize,1]{label={$\bullet$}} % \item are using bullets
-\setbeamertemplate{itemize items}[ball]
+\setbeamertemplate{itemize items}[circle]
+
 % create a new command to show it on two screens
 % I'm using dspdfviewer.
 \newcommand{\setDualView} {
