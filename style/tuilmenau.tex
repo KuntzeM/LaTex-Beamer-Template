@@ -40,7 +40,7 @@
      \centering
      \rotatebox{0}{\includegraphics[width=1.0\paperwidth, height=1.0\paperheight]{style/images/master_background}}
 }}}
-\setbeamersize{text margin left=3em,text margin right=2em}
+\setbeamersize{text margin left=2em,text margin right=2em}
 \setbeamersize{mini frame size=0.4em}
 
 % set colors
@@ -62,18 +62,18 @@
 \setbeamertemplate{footline}{
 	
   \leavevmode
-  \vspace{-7em}	
+  \vspace{-6em}	
   \hbox{
 
 	  \begin{beamercolorbox}[wd=1\paperwidth,ht=10ex,dp=8ex,left]{}%
 
 		   % navigation with subsections as dots
-		   % \vspace{-3em}
-		   % \hspace{0cm}\insertnavigation{0.4\paperwidth} % add navigation in footer
+		   \hspace{3.5em}\insertnavigation{0.7\paperwidth}{\hskip0pt plus1fill} % add navigation in footer
+		    
 			
 		   % navigation with sections, no subsections
 		   	    			
-		   \insertsectionnavigationhorizontal{0.6\paperwidth}{\hskip0pt plus1fill}{} \\ % add navigation in footer}
+		   %\insertsectionnavigationhorizontal{0.6\paperwidth}{\hskip0pt plus1fill}{} \\ % add navigation in footer}
 		   
 	  \end{beamercolorbox} 
 
@@ -81,17 +81,17 @@
   }
   \vspace{-3em}
   \hbox{
-  	\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+  	\begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
   		\hspace{5em}
   		\usebeamerfont{author in head/foot}\insertshortauthor
   	\end{beamercolorbox}%
-  	\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
-  		\usebeamerfont{title in head/foot}\insertshorttitle
-  	\end{beamercolorbox}%
-  	\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+  	%\begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+  	%	\usebeamerfont{title in head/foot}\insertshorttitle
+  	%\end{beamercolorbox}%
+  	\begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
   		\usebeamerfont{title in head/foot}\insertshortinstitute
   	\end{beamercolorbox}%	
-	 \begin{beamercolorbox}[wd=0.05\paperwidth,ht=10ex,dp=8ex,left]{}%			 	
+	 \begin{beamercolorbox}[wd=0.33\paperwidth,ht=10ex,dp=8ex,right]{}%			 	
 			 	\textcolor{white} {\insertframenumber\ / \inserttotalframenumber} % add page numbers
 	 \end{beamercolorbox}
   }
@@ -103,8 +103,7 @@
 	\vspace{0.8cm}
 	\textbf{\insertframetitle} \\
 	\vspace{0.8em}
-	{\huge \insertframesubtitle}
-	
+	{\huge \insertframesubtitle}	
 }
 
 % enumerate sections
@@ -123,7 +122,7 @@
 %--------------------------Allgemein------------------------------------------------------
 \setbeamercovered{transparent} % make the beamer theme invisible
 \usefonttheme{structurebold}
-\beamertemplatenavigationsymbolsempty % set navigations helper function to on
+\beamertemplatenavigationsymbolsempty % set navigations helper function to off
 \setbeamertemplate{bibliography item}[text]
 \setbeamertemplate{note page}[plain]
 
@@ -136,11 +135,11 @@
 	\setbeameroption{show notes on second screen=right}
 }
 
-
+%\AtBeginSection[]{\subsection{}}
 \newcommand{\addcite}[1]{%
 	\AddToShipoutPictureFG*{%
 		\AtPageLowerLeft{%
-			\put(0.95\paperwidth,5em){											
+			\put(0.90\paperwidth,5em){											
 				\tiny{
 					\cite{#1} 
 				}			
@@ -150,5 +149,5 @@
 }
 
 
-
+\AtBeginSection[]{\subsection{}}
 
