@@ -1,0 +1,40 @@
+\ProvidesPackage{clear}
+
+% declare CI color for the TU Ilmenau
+\definecolor{orange}{rgb}{1.0,0.475,0} % there are normed to one
+\definecolor{black}{rgb}{0.00,0.00,0.00}
+\definecolor{green}{rgb}{0,0.455,0.478}
+\definecolor{blue}{rgb}{0,0.2,0.349}
+\definecolor{black}{rgb}{0,0,0}
+
+\setbeamersize{text margin left=2em,text margin right=2em}
+\setbeamersize{mini frame size=0.4em}
+
+% set colors
+\setbeamercolor{structure}{fg=blue} % table of content
+\setbeamercolor{frametitle}{fg=orange} 
+\setbeamercolor{mini frame}{fg=orange} % active elements in main-navigation
+\setbeamercolor{section in head/foot}{fg=blue} % active elements in sub-navigation
+\setbeamertemplate{mini frame in other subsection}[default][50] % saturate of the non-active elements in the navigation
+\setbeamertemplate{section in head/foot shaded}[default][50]
+\setbeamercolor{normal text}{fg=blue} % generally text color
+\setbeamercolor{title}{fg=orange} % text color of titlepage
+\setbeamercolor{item}{fg=orange} % color for bullets in items
+
+\setbeamercolor{author in head/foot}{fg=blue}
+\setbeamercolor{title in head/foot}{fg=blue}
+\setbeamercolor{date in head/foot}{fg=blue}
+\setbeamercolor{pagenumber in head/foot}{fg=blue}
+\setbeamersize{sidebar width left=5mm} % size of the left side bar
+\setbeamercolor{background canvas}{bg=} % make the beamer background invisible
+\AddToShipoutPicture{ \put(4cm,0.4cm){
+		\parbox[c]{\paperwidth}{
+			\centering
+			\rotatebox{0}{\includegraphics[width=2cm]{style/images/logo_tui.eps}}
+		}}}
+\AddToShipoutPicture{
+	\put(0cm,1.2cm){
+	\textcolor{blue}{\rule{\paperwidth}{0.01pt}}
+}
+	}
+

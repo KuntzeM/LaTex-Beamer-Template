@@ -1,7 +1,9 @@
-*
-!demo.tex
-!demo.pdf
-!style/
-!style/tuilmenau.tex
-!style/images/master_background.eps
-!./gitignore
+*.aux
+*.bbl
+*.blg
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
