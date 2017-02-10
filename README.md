@@ -1,6 +1,6 @@
 # Beamer Theme TU Ilmenau
-This is a latex presentation (beamer) theme for the technical university in ilmenau.
-The background image from TUIlmenau template is from Institut für Werkstofftechnik. 
+This is a latex presentation (beamer) theme for the technical university of ilmenau.
+The background image from TUIlmenau template is from Institut of Werkstofftechnik. 
 
 ## Usage
 ```latex
@@ -10,9 +10,9 @@ The background image from TUIlmenau template is from Institut für Werkstofftech
 ```
 
 ## Styles
-In the folder style are different files. In "template.text" are implemented generally settings.
+In the folder style are different files. General settings are implemented in "style/template.tex".
 
-You can use "\usepackage{style/tuilmenau}" to use the TU Ilmenau corporate design. The "\usepackage{style/clear}" - package include my simply clear design.
+You can use "\usepackage{style/tuilmenau}" to get the TU Ilmenau corporate design. The "\usepackage{style/clear}" - package includes my simply clear design.
 
 You can copy one of these files to create your own theme!
 
