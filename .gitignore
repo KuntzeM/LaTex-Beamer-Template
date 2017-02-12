@@ -1,9 +1,7 @@
-*.aux
-*.bbl
-*.blg
-*.log
-*.nav
-*.out
-*.snm
-*.synctex.gz
-*.toc
+*
+!.gitignore
+!demo.tex
+!LICENSE
+!README.MD
+!style/images/*
+!style/*.tex

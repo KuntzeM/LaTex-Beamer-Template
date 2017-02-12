@@ -20,9 +20,17 @@
 \usepackage{tabularx} 
 \usepackage{booktabs}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage{eso-pic}  % package to set background image
 \usepackage[calc]{picture}
 
+% Packages and stuff for ToDo list like itempoints
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\open}{$\square$}
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
 
 % side bar and footer
 
