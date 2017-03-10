@@ -30,8 +30,8 @@ You can copy one of these files to create your own theme!
 * the generated pdf has the double width, the right one is for notes
 * to display this on linux, I'm using "dspdfviewer".
  * for windows is it possible, too.
+ * more informations on http://dspdfviewer.danny-edel.de/
 
 ```latex
 \setDualView
 ```
-
