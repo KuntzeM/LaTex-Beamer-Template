@@ -29,16 +29,16 @@ You can copy one of these files to create your own theme!
 * enable dualview mode
 * the generated pdf has the double width, the right one is for notes
 * to display this on linux, I'm using "dspdfviewer".
- * for windows is it possible, too.
- * more informations on http://dspdfviewer.danny-edel.de/
+  * for windows is it possible, too.
+  * more informations on http://dspdfviewer.danny-edel.de/
 
 ```latex
 \setDualView
 ```
 
 * add reference frames 
- * argument 1: frame title
- * argument 2: bibtex style or path to bibtex style (e.g. deIEEEtran, IEEEbib -> both styles are included in this repository) 
+  * argument 1: frame title
+  * argument 2: bibtex style or path to bibtex style (e.g. deIEEEtran, IEEEbib -> both styles are included in this repository) 
 
 ```latex
 \insertReferenceFrame{References}{IEEEbib}{MyReferences.bib}
