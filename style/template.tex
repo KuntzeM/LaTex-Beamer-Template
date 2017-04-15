@@ -120,6 +120,16 @@
 	}	
 }
 
+% insert a frame with references -> use bibtex
+\newcommand{\insertReferenceFrame}[3]{%
+	\section{#1}
+	\begin{frame}[allowframebreaks]
+		\frametitle{#1}
+		\bibliographystyle{#2}
+		\bibliography{#3}
+	\end{frame}	
+}
+
 
 \AtBeginSection[]{\subsection{}}
 	

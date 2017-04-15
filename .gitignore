@@ -1,6 +1,7 @@
 *
 !.gitignore
 !demo.tex
+!*.bst
 !LICENSE
 !README.MD
 !style/images/*

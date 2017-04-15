@@ -35,3 +35,11 @@ You can copy one of these files to create your own theme!
 ```latex
 \setDualView
 ```
+
+* add reference frames 
+ * argument 1: frame title
+ * argument 2: bibtex style or path to bibtex style (e.g. deIEEEtran, IEEEbib -> both styles are included in this repository) 
+
+```latex
+\insertReferenceFrame{References}{IEEEbib}{MyReferences.bib}
+```
