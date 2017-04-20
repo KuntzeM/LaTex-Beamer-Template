@@ -1,4 +1,5 @@
 \input{style/template.tex}
+\usepackage{style/pdfpc-commands}
 %\usepackage{style/tuilmenau}
 \usepackage{style/clear}
 %\setDualView
@@ -95,6 +96,18 @@
 	\end{columns}
 \end{frame}
 
+
+\section{Video}
+\frame{
+	\frametitle{Example 2}
+	
+	A video using the \textbf{commands from \texttt{pdfpc-commands}} is on this slide.  The video is set to start at 1 seconds and end at 9 seconds.
+	\note{test}
+	\vspace{20pt}
+	
+	\inlineMovie[loop&autostart&start=1&stop=9]{bigbunny_100.mp4}{bigbunny_100.jpg}{height=0.7\textheight}
+}
+
 \section{Diskussion}
 \subsection*{}
 \begin{frame}
@@ -128,6 +141,7 @@
  	\end{center}
  \end{columns}
 \end{frame}
+
 
 %arg1: frame title / arg2: bibstyle / arg3: bibtex file
 \insertReferenceFrame{Referenzen}{deIEEEtran}{MyReferences.bib}

@@ -28,9 +28,7 @@ You can copy one of these files to create your own theme!
 
 * enable dualview mode
 * the generated pdf has the double width, the right one is for notes
-* to display this on linux, I'm using "dspdfviewer".
-  * for windows is it possible, too.
-  * more informations on http://dspdfviewer.danny-edel.de/
+* you have to use a special pdf viewer to show this pdfs with notes
 
 ```latex
 \setDualView
@@ -43,3 +41,26 @@ You can copy one of these files to create your own theme!
 ```latex
 \insertReferenceFrame{References}{IEEEbib}{MyReferences.bib}
 ```
+
+## pdf viewer
+
+### dspdfviewer
+* dual monitor pdf viewer
+* more informations on http://dspdfviewer.danny-edel.de/
+
+### pdf-presenter-console
+* dual monitor pdf viewer
+* include the following line to use embeded videos in you presentation
+```latex
+\usepackage{style/pdfpc-commands}
+
+```
+* more informations on https://pdfpc.github.io/
+
+
+
+
+
+
+
+
